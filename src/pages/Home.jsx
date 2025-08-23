@@ -137,14 +137,7 @@ const HomePage = () => {
                 <p className="text-xl md:text-2xl text-white mb-8 max-w-2xl mx-auto animate-fade-in delay-200">
                   Nurturing Minds, Building Futures for Over Two Decades
                 </p>
-                <div className="flex justify-center gap-4 animate-fade-in delay-500">
-                  <button className="bg-teal-500 hover:bg-teal-600 text-white font-semibold py-3 px-8 rounded-lg transition duration-300 text-lg shadow-lg hover:shadow-xl transform hover:-translate-y-1">
-                    Apply Now
-                  </button>
-                  <button className="bg-transparent border-2 border-white text-white font-semibold py-3 px-8 rounded-lg transition duration-300 text-lg hover:bg-white/20 transform hover:-translate-y-1">
-                    Learn More
-                  </button>
-                </div>
+                
               </div>
             </div>
           </div>
