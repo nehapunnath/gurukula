@@ -9,6 +9,8 @@ import About from './pages/About'
 import Contact from './pages/Contact'
 import NewsEvents from './pages/NewsEvents'
 import Academics from './pages/Academics'
+import Faculty from './pages/Faculty'
+import Facilities from './pages/Facilities'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -22,6 +24,10 @@ function App() {
       <Route path='/contact' element={<Contact/>}/>
       <Route path='/news' element={<NewsEvents/>}/>
       <Route path='/academics' element={<Academics/>}/>
+      <Route path='/faculty' element={<Faculty/>}/>
+      <Route path='/facilities' element={<Facilities/>}/>
+
+
 
 
 

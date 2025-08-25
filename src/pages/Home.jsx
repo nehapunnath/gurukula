@@ -4,6 +4,14 @@ import { ChevronLeftIcon, ChevronRightIcon, PlayIcon, AcademicCapIcon, BookOpenI
 import Leaders from '../components/Leaders';
 import NewsInsights from '../components/NewsInsights';
 import Gallery from '../components/Gallery';
+import s1 from '../assets/s1.jpg'
+import s12 from '../assets/s12.jpg'
+import s13 from '../assets/s13.jpg'
+import c1 from '../assets/c1.jpg'
+import s6 from '../assets/s6.jpg'
+import s16 from '../assets/s16.jpg'
+import s7 from '../assets/s7.jpg'
+
 
 const HomePage = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -17,9 +25,10 @@ const HomePage = () => {
 
   // Carousel images (placeholder URLs from Unsplash)
   const carouselImages = [
-    "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-    "https://images.unsplash.com/photo-1498243691581-b145c3f54a5a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-    "https://images.unsplash.com/photo-1562774053-701939374585?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2072&q=80"
+    s1,
+    s12,
+    s13,
+
   ];
 
   // Courses offered data
@@ -55,28 +64,28 @@ const HomePage = () => {
   // Facilities data
   const facilities = [
     {
-      title: "Digital Classrooms",
+      title: "Classrooms",
       description: "Smart classrooms with interactive learning technology",
-      image: "https://images.unsplash.com/photo-1588072432836-e10032781450?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2072&q=80"
+      image: s16
     },
     {
-      title: "Science Labs",
+      title: "Labs",
       description: "Well-equipped laboratories for practical learning",
-      image: "https://images.unsplash.com/photo-1532094349884-543bc11b234d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+      image: s6
     },
     {
       title: "Library",
       description: "Extensive collection of books and digital resources",
-      image: "https://images.unsplash.com/photo-1507842217343-583bb7270b66?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2053&q=80"
+      image: c1
     },
     {
       title: "Sports Facilities",
       description: "Indoor and outdoor facilities for various sports",
-      image: "https://images.unsplash.com/photo-1549060279-7e168fce7090?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+      image: s7
     }
   ];
 
-  // News data
+ 
   const news = [
     {
       title: "Annual Day Celebration",
@@ -171,7 +180,7 @@ const HomePage = () => {
 
       {/* Announcements Section with improved marquee */}
       <div className="bg-gradient-to-r from-teal-700 to-teal-800 text-white py-4 px-4 overflow-hidden relative">
-        <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/diagmonds-light.png')] opacity-10"></div>
+        <div className="absolute inset-0  opacity-10"></div>
         <div className="container mx-auto flex items-center relative z-10">
           <span className="font-bold text-lg mr-6 whitespace-nowrap flex items-center">
             <span className="inline-block w-3 h-3 rounded-full bg-teal-300 animate-pulse mr-2"></span>
@@ -217,7 +226,7 @@ const HomePage = () => {
             <div className="absolute -top-4 -right-4 w-24 h-24 bg-teal-500/10 rounded-full"></div>
             <div className="absolute -bottom-4 -left-4 w-16 h-16 bg-purple-500/10 rounded-full"></div>
             <h2 className="text-3xl font-bold text-teal-800 mb-6 relative pb-3 after:absolute after:left-0 after:bottom-0 after:h-1 after:w-16 after:bg-gradient-to-r after:from-teal-500 after:to-purple-500 after:rounded-full">
-              Welcome to Sri Gurukula
+              Welcome to Sri Gurukula International School
             </h2>
             <p className="text-gray-700 mb-4 text-lg leading-relaxed">
               Established with a vision to provide quality education, Sri Gurukula Group of Institutions 
@@ -225,18 +234,18 @@ const HomePage = () => {
               traditional values with modern educational practices to nurture well-rounded individuals.
             </p>
             <p className="text-gray-700 mb-6 text-lg leading-relaxed">
-              Spread across a lush green 4-acre campus, we provide a conducive environment for 
+              Spread across a 5-acre campus, we provide a conducive environment for 
               academic growth and personal development. Our dedicated faculty and state-of-the-art 
               facilities ensure that every student receives the attention and resources they need to excel.
             </p>
-            <div className="flex flex-wrap gap-4">
+            {/* <div className="flex flex-wrap gap-4">
               <button className="bg-gradient-to-r from-teal-600 to-teal-700 hover:from-teal-700 hover:to-teal-800 text-white font-semibold py-3 px-8 rounded-lg transition-all duration-300 text-lg shadow-md hover:shadow-lg transform hover:-translate-y-1">
                 Learn More
               </button>
               <button className="border-2 border-teal-600 text-teal-700 hover:bg-teal-50 font-semibold py-3 px-8 rounded-lg transition-all duration-300 text-lg transform hover:-translate-y-1">
                 Campus Tour
               </button>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
@@ -334,12 +343,7 @@ const HomePage = () => {
             ))}
           </div>
           
-          <div className="text-center mt-12">
-            <button className="inline-flex items-center bg-gradient-to-r from-teal-600 to-teal-700 hover:from-teal-700 hover:to-teal-800 text-white font-semibold py-3 px-8 rounded-lg transition-all duration-300 shadow-md hover:shadow-lg transform hover:-translate-y-1">
-              Explore All Facilities
-              <ArrowRightIcon className="w-5 h-5 ml-2" />
-            </button>
-          </div>
+         
         </div>
       </div>
 

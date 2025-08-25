@@ -40,7 +40,7 @@ const Header = () => {
             />
           </div>
           <h1 className="text-xl font-bold hidden md:block font-serif  ">
-            Sri Gurukula Group<br />of Institutions
+            Sri Gurukula International<br />School
           </h1>
         </div>
 

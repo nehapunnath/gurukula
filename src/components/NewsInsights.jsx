@@ -1,5 +1,6 @@
 import React from 'react'
 import { CalendarDaysIcon, ArrowRightIcon } from '@heroicons/react/24/outline'
+import { Link } from 'react-router-dom';
 
 function NewsInsights() {
     const newsItems = [
@@ -77,12 +78,14 @@ function NewsInsights() {
         </div>
         
         <div className="text-center mt-12">
+          <Link to={'/news'}>
           <button className="bg-gradient-to-r from-teal-600 to-teal-700 hover:from-teal-700 hover:to-teal-800 text-white font-semibold py-3 px-8 rounded-lg transition-all duration-300 shadow-md hover:shadow-lg transform hover:-translate-y-1 inline-flex items-center">
             View All News
             <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
             </svg>
           </button>
+          </Link>
         </div>
       </div>
     </div>
